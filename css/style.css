@@ -1,0 +1,1051 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+  :root {
+            --primary-color: #6dda5f; 
+            --secondary-color: #075a21; 
+            --dark-color: #558573;
+            --light-color: #1a2a3a;
+        }
+
+body {
+     margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    background: #338e3d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #abd1a4;
+}
+
+/* Шапка */
+header {
+    background: linear-gradient(135deg, var(--dark-color), var(--secondary-color));
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(11, 11, 11, 0.1);
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 13%;
+    z-index: 1000;
+}
+ .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            background-size: cover;
+            opacity: 0.5;
+        }
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+      max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+}
+   .top-bar {
+            
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+
+
+ .logo {
+            font-size: 38px;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            display: flex;
+            align-items:flex-start;
+        }
+
+.logo span {
+            color: var(--primary-color);
+        }
+        
+/* Навигация */
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+         .nav-button {
+            position: relative;
+            padding: 12px 25px;
+            margin: 8 5px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+         .nav-button:hover {
+            background: rgba(255,255,255,0.15);
+        }
+        
+        .nav-button.active {
+            background: var(--primary-color);
+            box-shadow: 0 4px 8px rgba(17, 179, 117, 0.3);
+        }
+nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+
+
+ .phone {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .phone i {
+            margin-right: 10px;
+            color: var(--primary-color);
+            font-size: 20px;
+        }
+
+/* Герой секция */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cont.ws/uploads/posts/354089.jpg');
+  
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 180px 0 100px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+/* кадастровые номера */
+/* Секция строительства */
+.construction-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #b0dcc1 0%, #ffffff 100%);
+}
+
+.construction-block {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-left: 5px solid #286825;
+}
+
+.construction-block h2 {
+    background: #a9e6eb;
+    color: rgb(2, 2, 2);
+    padding: 20px;
+    margin: 0;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.construction-block h2 i {
+    margin-right: 15px;
+    color: #328a35;
+}
+
+.construction-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+.construction-address h3,
+.construction-cadastre h3 {
+    color: #176933;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+}
+
+.construction-address p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: hsl(52, 30%, 24%);
+}
+
+.construction-cadastre ul {
+    list-style: none;
+}
+
+.construction-cadastre ul li {
+    background: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: #2c503d;
+    border-left: 3px solid #34db6e;
+    transition: all 0.3s;
+}
+
+.construction-cadastre ul li:hover {
+    background: #e9f5ff;
+    transform: translateX(5px);
+}
+
+.construction-footer {
+    background: #f8f9fa;
+    padding: 15px 30px;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.construction-footer i {
+    margin-right: 10px;
+    color: #1d6d29;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .construction-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .construction-block h2 {
+        font-size: 20px;
+    }
+    
+    .construction-address p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+/* Преимущества */
+.advantages {
+    padding: 80px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.advantages h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.advantage {
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.advantage:hover {
+    transform: translateY(-10px);
+}
+
+.advantage i {
+    font-size: 40px;
+    color: #4c993c;
+    margin-bottom: 20px;
+}
+
+.advantage h3 {
+    font-size: 20px;
+}
+
+/* Участки */
+/* Секция карусели */
+.photo-carousel-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.photo-carousel-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #2c3e50;
+}
+
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 500px;
+}
+
+.carousel-item {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.carousel-control:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: #2c3e50;
+}
+
+.carousel-control.prev {
+  left: 20px;
+}
+
+.carousel-control.next {
+  right: 20px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.carousel-indicators .indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.carousel-indicators .indicator.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+/*Панорама*/
+.panorama-container {
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panorama-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.panorama-link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.panorama-image {
+  height: 400px;
+ 
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.panorama-link:hover .panorama-image {
+  transform: scale(1.03);
+}
+
+.panorama-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 20px;
+  text-align: center;
+}
+
+.panorama-overlay h3 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ddd;
+}
+
+.panorama-overlay p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.panorama-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  backdrop-filter: blur(5px);
+}
+
+
+
+/* Анимация перехода */
+@keyframes fadeIn {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+.carousel-item.active {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 400px;
+  }
+  
+  .carousel-control {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-inner {
+    height: 300px;
+  }
+  
+
+}
+
+
+
+/* Секция с проектами домов */
+.house-plans-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.house-plans-section h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  text-align: center;
+  color: #7f8c8d;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 18px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.plan-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.plan-image-container {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.plan-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.plan-card:hover .plan-image {
+  transform: scale(1.05);
+}
+
+.plan-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+.plan-card:hover .plan-overlay {
+  opacity: 1;
+}
+
+.zoom-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #2c3e50;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-btn:hover {
+  background: #4adb34;
+  color: white;
+  transform: scale(1.1);
+}
+
+.plan-info {
+  padding: 20px;
+}
+
+.plan-info h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.plan-specs {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.plan-specs li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  color: #34495e;
+}
+
+.plan-specs i {
+  color: #2a7f2d;
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.plan-details-btn {
+  width: 100%;
+  background: #1c7c27;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.plan-details-btn:hover {
+  background: #29b973;
+}
+
+
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #3498db;
+  color: #3498db;
+  padding: 12px 30px;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background: #3498db;
+  color: white;
+}
+
+/* Модальное окно */
+.modal-plan {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  margin: 5% auto;
+  padding: 20px;
+  max-width: 900px;
+  width: 90%;
+  border-radius: 8px;
+  animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+  from {opacity: 0; transform: translateY(-50px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-modal:hover {
+  color: #333;
+}
+
+#modalPlanImage {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.modal-plan-info {
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .plans-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .plan-image-container {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-description {
+    font-size: 16px;
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+    width: 95%;
+    padding: 10px;
+  }
+  
+  #modalPlanImage {
+    max-height: 300px;
+  }
+}
+
+
+
+
+
+
+
+
+/* О Крыме */
+.about-crimea {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.about-crimea .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-crimea ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.about-crimea ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about-crimea ul li i {
+    color: #3498db;
+    margin-right: 10px;
+}
+
+/* Контакты */
+.contacts {
+    padding: 80px 0;
+}
+
+.contacts h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    color: #258136;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0e9522;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Подвал */
+footer {
+    background: #568662;
+    color: rgb(54, 134, 88);
+    padding: 50px 0 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-logo h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    color: #ffffff;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #206b24;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #206b24;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #bdc3c7;
+    font-size: 14px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+   header {
+        padding: 3px 0;
+        height: auto;
+        position: absolute;
+    }
+    
+    header .container {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+    
+    .top-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+ .logo {
+        font-size: 23px;
+        
+       
+    }
+    
+    .logo + p {
+        margin: 0;
+        font-size: 12px;
+        color: rgba(255,255,255,0.8);
+        align-self: flex-start;
+    }
+     .nav {
+        width: 125%;
+        margin: 6px 0;
+       
+    }
+   nav ul {
+        justify-content: space-around;
+        padding: 0;
+        width: 100%;
+    }
+
+   
+     .nav-button {
+        padding: 8px 10px;
+        margin: 0;
+        font-size: 12px;
+        border-radius: 20px;
+        flex-grow: 1;
+        text-align: center;
+    }
+    
+    .phone {
+        align-self: center;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    
+    .phone i {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+
+
+    .hero {
+        padding: 230px 0 80px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .about-crimea .container,
+    .contacts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        order: -1;
+    }
+    
+ 
+            
+            .logo {
+                margin-bottom: 15px;
+            }
+            
+            .nav {
+                flex-wrap: wrap;
+            }
+            
+            .nav-button {
+                margin: 5px;
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+ .photo-carousel-section{
+    width: 120%;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0;
+    margin-left: -35px;
+}
+
+}
+
+@media (max-width: 480px) {
+    .filter-btn {
+        margin: 0 5px 10px 0;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
